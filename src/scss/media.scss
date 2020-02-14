@@ -1,0 +1,460 @@
+@import 'variables.scss';
+
+
+@media screen and (max-width:1090px){
+  .slick-arrow{
+    right: 200px;
+  }
+
+  .slick-next{
+    right: 100px;
+  }
+  .news-grid__item-title{
+    font-size: 16px;
+    
+  }
+}
+
+@media screen and (max-width:1040px){
+  .menu{
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -15px;
+
+    &__icon{
+      display: inline-block;
+      position: fixed;
+      top: 35px;
+      right: 35px;
+    }
+    &__icon-line{
+      width: 40px;
+      height: 4px;
+      background: $colorBase;
+      position: relative;
+      display: block;
+
+      &:before,
+      &:after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 4px;
+        background-color: $colorBase;
+        right: 0px;
+        top: -10px;
+        border-radius: 9px;
+        opacity: 1;
+      }
+      &:after{
+        top: auto;
+        bottom: -10px;        
+      }
+    }    
+  }
+  
+  .nav{
+    position: fixed;
+    display: none;
+    top: -5px;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    height: 100%;
+    padding-bottom: 5px;
+
+    &__menu{
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      width: 240px;
+    }
+
+    &__item{
+      padding: 0;
+      text-align: center;
+      height: 40px;
+      margin: 0;    
+    }
+
+    &__item-link{
+      font-size: 20px;
+    }
+
+    &__form{
+      display: none;
+    }    
+  }
+
+  .menu_state_open {
+    display: block;  
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu_state_open .nav__close{
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+
+    &:hover{
+      color: $colorBase;
+    }
+  }  
+
+}
+
+@media screen and (max-width:990px){
+  .about__list-item{
+    padding-bottom: 60px;
+  }
+
+  .about-company{
+    display: block;
+    padding:80px 0;
+
+    &__img-block{
+      display: none;
+    }
+
+    &__tabs{
+      margin: 0 auto;
+    }
+  }
+
+  .grid__item-title{
+    font-size: 16px;
+  }
+
+  .grid__item-icon{
+    margin-right: 10px;
+  }
+
+  .slider__caption{
+    margin-top: 190px;
+  }
+  
+  .team-list{
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item{
+      margin-bottom: 30px;
+      &:nth-child(2){
+        margin-right: 0;
+      }
+    }    
+  }
+
+   .price__block-title{
+     font-size: 20px;
+   }
+}
+
+@media screen and (max-width:900px){
+  .price__block-title{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:850px){
+  .slider__buttons{
+    margin-bottom: 150px;
+  }
+
+  .slick-arrow{
+    bottom: 25px;
+  }
+
+  .about__list-item{
+    &:nth-child(2),
+    &:nth-child(4)
+    {
+      .about__list-icon{
+        margin-top: 69px;
+      }
+    }
+  }
+
+  .about__list-icon{
+    margin-top: 60px;
+  }
+
+  .grid{
+    grid-template-columns:1fr 1fr;
+  }
+  
+  .tab-grid{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+
+  .news-grid{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+
+  .wrapper--fix{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #map{
+    width: 100%;
+  }
+
+  .info-block{
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    width: 100%;
+    padding: 0 10px;
+    &__form{     
+        margin: 0 auto; 
+        margin-top: 25px;   
+      }
+
+    &__title{
+      text-align: center;
+    }
+  }
+
+  .price__block{
+    margin: 15px;
+  }
+
+  .hr{
+    display: none;
+  }
+
+  .features__title{
+    margin-top: 28px;
+  }
+
+  .news__title{
+    padding: 25px 0;
+  }
+
+  .about-company__tabs-list{
+    margin-top: 58px;
+    margin-bottom: 35px;
+  }
+
+  .price{
+    padding: 25px 0;
+
+    &__block{
+      max-width: 265px;
+    }
+  }
+  
+  .amazing-work{
+    padding: 25px 0;
+    &__tabs-list{
+      margin: 25px 0;
+    }
+    &__tabs-link{
+      font-size: 12px;
+    }
+  }
+}
+
+
+@media screen and (max-width:800px){
+  .slider__caption{
+    font-size: 25px;
+    margin-top: 210px;
+  }
+
+  .slider__subtitle{
+    font-size: 50px;
+  }
+
+  .slider__description{
+    font-size: 25px;
+    margin-bottom: 65px;
+  }
+
+  .about__list-title{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:780px){
+
+  .fact__icon:before{
+    display: none;
+  }
+
+  .grid{
+    gap: 30px;
+    margin-bottom: 28px;
+  }
+
+  .about-company{
+    padding: 30px 10px ;
+  }
+
+  .tabs--skill{
+    margin: 0;
+  }
+
+  .news-grid{
+    grid-template-columns:1fr 1fr ;
+
+    &__item{
+      margin: 0 auto;
+    }
+  }
+
+  .footer{
+    margin-top: 50px;
+    padding: 25px 0;
+  }
+
+  .team{
+    padding-bottom: 25px;
+  }
+
+  .slider__caption{
+    margin-top: 120px;
+  }
+
+  .slider__buttons{
+    margin-bottom: 90px;
+  } 
+}
+
+@media screen and (max-width:630px){
+  .fact__icon{
+    display: none;
+  }
+
+  .fact__list-item{
+    padding-bottom: 20px;
+  }
+
+  .fact__count{
+    padding-top: 20px;
+  }
+
+  .tab-grid { 
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .price__block-list{
+    display: none;
+  }
+
+  #map{
+    height: 250px;
+  }
+
+  .about__list-title{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .team-list__item{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 230px;    
+  }
+}
+
+@media screen and (max-width:550px){
+
+  .about__list-icon{
+    display: none;
+  }
+  .about__list-item{
+    padding: 25px 0;
+  }
+  .price__block{
+    max-width: 170px;
+  }
+
+  .amazing-work__tabs-list{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:510px){
+  .team-list__item{
+    margin-bottom: 5px;
+    &:nth-child(1),
+    &:nth-child(3){
+      margin-right: 5px;
+    }
+    
+  }
+}
+@media screen and (max-width:498px){
+  .team-list__item{
+    margin-bottom: 10px;
+    &:nth-child(1),
+    &:nth-child(3){
+      margin-right: 0px;
+    }
+    
+  }
+  .grid {    
+    grid-template-columns: 1fr;
+
+    &__item-title{
+      justify-content: center;
+    }
+  }
+  .slider__caption{
+    margin-top: 85px;
+    font-size: 20px;
+  }
+
+  .slider__subtitle {
+    font-size: 35px;
+}
+.slider__description {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.news-grid {
+  
+  grid-template-columns: 1fr;
+}
+.fact__count{
+  font-size: 20px;
+}
+.fact__title{
+  font-size: 14px;
+}
+.btn{
+  width: 120px;
+}
+
+.btn--info{
+width: 100%;
+}
+.price__block-title{
+  font-size: 13px;
+}
+.price__block {
+  max-width: 160px;
+}
+.price__block-cost{
+font-size: 20px;
+}
+.about__list-title{
+  font-size: 10px;
+}
+.features__title,
+.about-company__title,
+.amazing-work__title,
+.news__title,
+.team__title,
+.info-block__title,
+.price__title{
+  font-size: 25px;
+}
+}

@@ -1,0 +1,96 @@
+@import 'variables.scss';
+.team{
+  padding-bottom: 100px;
+
+  &__title{
+    color: #4e4e4e;
+    font-size: 36px;
+    font-family: $fontBase;
+    text-align: center;
+    padding-bottom: 32px;
+    display: block;
+    text-decoration: none;
+  }
+}
+.team-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  &__item{
+    list-style: none;
+     max-width: 265px;
+    margin-right: 30px;
+    width: 100%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    &:last-child{
+      margin-right: 0;
+    }
+  
+    &:hover{
+      transform: scale(1.1);
+      z-index: 25;
+
+      .team-list__item-name{
+        background-color: $colorBase;
+      }
+      .block-social__link{
+        background-color: $colorBase;
+      }
+    }
+  
+  }
+  
+  &__item-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 265px;   
+    height: 230px;
+    cursor:  pointer;
+  }
+  
+  &__item-name{
+    padding: 20px 0px 20px 25px;
+    background-color: #2e4a5b;
+    font-size: 16px;
+    font-family: $fontBase;
+    font-weight: bold;
+    cursor: pointer;    
+  }
+}
+
+.block-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link{
+    background-color:#2e4a5b ;
+    margin-top: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 67px;
+    width: 100%;
+    height: 64px;
+    cursor: pointer;
+
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      .block-social__icon {
+      color: #2e4a5b;
+      }
+    }
+  }
+
+  &__icon{
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+.nav__close{
+  display: none;
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu__icon {
+ width: 45px;
+ height: 35px;
+ cursor: pointer;
+}
+
+.navigation__menu{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__icon-line {
+  display: none;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}

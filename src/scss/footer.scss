@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+.footer{
+  margin-top: 128px;
+  background-color: #1c2b33;
+  padding:  50px 0;
+
+  &__info{
+    display: flex;
+    flex-direction: column;    
+  }
+
+  &__info-address,
+  &__info-phone,
+  &__info-fax,
+  &__info-email{
+    color: #c0c0c0;
+  }
+}
