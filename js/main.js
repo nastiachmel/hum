@@ -32,12 +32,17 @@ $(window).scroll(function(){
     // }   
 
     if (positionSkill < windowScroll) {
-      $(".skills").each(function(i){
-        $(this).find(".skill-bar").animate({
-          width: $(this).attr("data-percent") 
-        },500+ (i * 1000))
-      })
+      // $(".skills").each(function(i){
+      //   $(this).find(".skill-bar").animate({
+      //     width: $(this).attr("data-percent") 
+      //   },500+ (i * 1000))
+      // })
+
+      $('.skills>div').css('width', function(){
+        return $(this).parent().data('percent') + '%'
+    });
     }
+
 
     if (!show) return false; 
     if (positionFact < windowScroll) {
