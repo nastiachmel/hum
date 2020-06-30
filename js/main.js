@@ -15,7 +15,7 @@ $('.js-slider').slick({
 
 let show = true;
 let position = $('.about').offset().top;
-let tabGrid = $('.amazing-work__tabs-list').offset().top;
+//let tabGrid = $('.amazing-work__tabs-list').offset().top;
 let positionSkill = $('.skill').offset().top;
 let positionFact = $('.fact').offset().top;
 $(window).scroll(function(){
@@ -27,9 +27,9 @@ $(window).scroll(function(){
         }, 500 + (i * 500));
       });
     }
-    if (tabGrid < windowScroll) {
-      $('.tab-grid').addClass("animated fadeIn");
-    }   
+    // if (tabGrid < windowScroll) {
+    //   $('.tab-grid').addClass("animated fadeIn");
+    // }   
 
     if (positionSkill < windowScroll) {
       $(".skills").each(function(i){
@@ -234,67 +234,67 @@ getData("https://randomuser.me/api/?results=4").then(function(result){
   }
 })
 
-$( ".amazing-work" ).tabs();
+// $( ".amazing-work" ).tabs();
 
-getData("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=gNmZAMcqra1afb8nJTABRROcDD1tueje").then(function(result){
+// getData("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=gNmZAMcqra1afb8nJTABRROcDD1tueje").then(function(result){
 
-  if(result){
-    if(result.results.length>12){
-      result.results.length=12;
-      let list= ``;
-      for (let work of result.results){
-        if(work.multimedia==null){
-          work.multimedia='./img/notfound.png';
-        }
-        list += ` <li class="tab-grid__item " style="background-image:url(${work.multimedia})"  >`;
-        list += `<div class="tab-grid__item-hover"><a class="tab-grid__item-link"> <i  class=" tab-grid__item-icon fas fa-search " ></i></a> <div class="tab-grid__item-title">Web Design</div></div>`;  
-        list +=`</li>`;
-      }  
-      document.getElementsByClassName('tab-grid')[0].innerHTML = list;
-      document.getElementsByClassName('tab-grid')[2].innerHTML = list;
-      document.getElementsByClassName('tab-grid')[4].innerHTML = list;
-    }
-  }
-})
+//   if(result){
+//     if(result.results.length>12){
+//       result.results.length=12;
+//       let list= ``;
+//       for (let work of result.results){
+//         if(work.multimedia==null){
+//           work.multimedia='./img/notfound.png';
+//         }
+//         list += ` <li class="tab-grid__item " style="background-image:url(${work.multimedia})"  >`;
+//         list += `<div class="tab-grid__item-hover"><a class="tab-grid__item-link"> <i  class=" tab-grid__item-icon fas fa-search " ></i></a> <div class="tab-grid__item-title">Web Design</div></div>`;  
+//         list +=`</li>`;
+//       }  
+//       document.getElementsByClassName('tab-grid')[0].innerHTML = list;
+//       document.getElementsByClassName('tab-grid')[2].innerHTML = list;
+//       document.getElementsByClassName('tab-grid')[4].innerHTML = list;
+//     }
+//   }
+// })
 
-$('.btn--work').click(function(){ 
-  getData("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=gNmZAMcqra1afb8nJTABRROcDD1tueje").then(function(result){
-    if(result){
-      console.log(result.results.length);
-      let list= ``;
-      for (let work of result.results){     
-        if(work.multimedia==null){
-          work.multimedia='./img/notfound.png';
-        }
-        list += ` <li class="tab-grid__item" style="background-image:url(${work.umiltimedia})"  >`;
-        list += `<div class="tab-grid__item-hover"><a class="tab-grid__item-link"> <i  class=" tab-grid__item-icon fas fa-search " ></i></a> <div class="tab-grid__item-title">Web Design</div></div>`;  
-        list +=`</li>`;
-      }
-      document.getElementsByClassName('tab-grid')[0].innerHTML = list;
-    }
+// $('.btn--work').click(function(){ 
+//   getData("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=gNmZAMcqra1afb8nJTABRROcDD1tueje").then(function(result){
+//     if(result){
+//       console.log(result.results.length);
+//       let list= ``;
+//       for (let work of result.results){     
+//         if(work.multimedia==null){
+//           work.multimedia='./img/notfound.png';
+//         }
+//         list += ` <li class="tab-grid__item" style="background-image:url(${work.umiltimedia})"  >`;
+//         list += `<div class="tab-grid__item-hover"><a class="tab-grid__item-link"> <i  class=" tab-grid__item-icon fas fa-search " ></i></a> <div class="tab-grid__item-title">Web Design</div></div>`;  
+//         list +=`</li>`;
+//       }
+//       document.getElementsByClassName('tab-grid')[0].innerHTML = list;
+//     }
   
-  })
-})
+//   })
+// })
 
-getData("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=gNmZAMcqra1afb8nJTABRROcDD1tueje").then(function(result){
+// getData("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=gNmZAMcqra1afb8nJTABRROcDD1tueje").then(function(result){
 
-  if(result){
-    if(result.results.length>12){
-      result.results.length=12;
-      let list= ``;
-      for (let work of result.results){ 
-        if(work.multimedia=null){
-          work.multimedia='./img/notfound.png';
-        }
-        list += ` <li class="tab-grid__item" style="background-image:url(${work.multimedia})"  >`;
-        list += `<div class="tab-grid__item-hover"><a class="tab-grid__item-link"> <i  class=" tab-grid__item-icon fas fa-search " ></i></a> <div class="tab-grid__item-title">Web Design</div></div>`;  
-        list +=`</li>`;
-      }
-      document.getElementsByClassName('tab-grid')[1].innerHTML = list;
-      document.getElementsByClassName('tab-grid')[3].innerHTML = list;
-    }
-  }
-})
+//   if(result){
+//     if(result.results.length>12){
+//       result.results.length=12;
+//       let list= ``;
+//       for (let work of result.results){ 
+//         if(work.multimedia=null){
+//           work.multimedia='./img/notfound.png';
+//         }
+//         list += ` <li class="tab-grid__item" style="background-image:url(${work.multimedia})"  >`;
+//         list += `<div class="tab-grid__item-hover"><a class="tab-grid__item-link"> <i  class=" tab-grid__item-icon fas fa-search " ></i></a> <div class="tab-grid__item-title">Web Design</div></div>`;  
+//         list +=`</li>`;
+//       }
+//       document.getElementsByClassName('tab-grid')[1].innerHTML = list;
+//       document.getElementsByClassName('tab-grid')[3].innerHTML = list;
+//     }
+//   }
+// })
 
 
 //map
