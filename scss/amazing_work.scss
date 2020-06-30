@@ -1,0 +1,155 @@
+@import 'variables.scss';
+
+.amazing-work{
+  background-color: #f8fcfe;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  
+  &__title{
+    color: #4e4e4e;
+    font-family: $fontBase;
+    font-size: $fontSize + 16;
+    text-align: center;
+    padding-bottom: 25px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  &__tabs-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+
+  &__tabs-item{
+    list-style: none;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding: 30px 20px;
+    outline: none;
+    text-align: center;
+  }
+  
+  &__tabs-link{
+    color: #717171;
+    font-size: $fontSize - 6;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $fontBase;  
+  }
+}
+
+.tab-grid{
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  &__item{
+    width: 100%;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 207px;
+    cursor: pointer;
+
+    &:hover .tab-grid__item-hover{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__item-img{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 207px;
+    cursor: pointer;
+    background-image: url(../img/notfound.png);
+    transition-duration: 0.5s;
+  }
+
+  &__item-link{
+    display: flex;
+    background-color: #18cfab;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 207px;
+    background-image: none;
+    background-color: #f8fcfe;  
+  }
+
+  &__item-title{
+    color: $colorBase;
+    font-family: $fontBase;
+    font-size: $fontSize - 6;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 35px;
+  }
+
+  &__item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+  
+.hr{
+  width: 75px;
+  display: block;
+  border: none;
+  border-top: 1px solid $colorBase;
+  height: 5px;
+  position: relative;
+  margin: 0 auto 59px auto;
+  
+  &::before{
+    content: "";
+    width: 75px;  
+    display: block;
+    border: none;
+    height:100%;
+    border-top: 1px solid $colorBase;
+    position: absolute;
+    top:3px;
+    left: 12px;
+  }
+
+  &--about-company{
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 70px;
+  }
+
+  &--fix{
+    margin-bottom: 65px;
+  }
+
+  &--info{
+    left: 18%;
+  }
+}

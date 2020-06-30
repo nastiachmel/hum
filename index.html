@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./lib/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- <script src="wow.min.js"></script> -->
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="mainer">  
+      <nav class="navigation">
+        <img class="logo" src="./img/logo.png">
+        <div class="menu">
+          <div class="menu__icon">
+            <span class="menu__icon-line" ></span>
+          </div>
+          <ul class="nav">
+            <a  class="nav__close">&#10008;</a>
+            <li class="nav__item"><a href="#home" class="nav__item-link" onclick="active('.home')">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__item-link"  onclick="active('.about')"> about</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__item-link" onclick="active('.skills')"> skills</a></li>
+            <li class="nav__item"><a href="#work" class="nav__item-link" onclick="active('.amazing-work__title')"> work</a></li>
+            <li class="nav__item"><a href="#news" class="nav__item-link" onclick="active('.news')">  blog</a></li>
+            <li class="nav__item"><a href="#team" class="nav__item-link" onclick="active('.team')">  team </a></li>
+            <li class="nav__item"><a href="#contact" class="nav__item-link" onclick="active('.footer__info')"> contact</a></li>
+          </ul>
+        </div>
+        <form id="search-highlight" method="post" action="#" class="nav__form" >
+          <i  class=" nav__icon fas fa-search " ></i>
+          <input type="text" class="nav__search">
+        </form>       
+      </nav>      
+    </div>
+  </header>
+  
+  <div class="slider js-slider">
+    <div  class="slide" >
+      <a name="home"></a>
+      <div class="slider__caption"> The Ham is <span style="color: #18cfab;">Wordpress theme</span></div>
+      <div class="slider__subtitle">we are creative </div>
+      <div class="slider__description">Just Buy And Enjoy These Awesome Features</div>
+      <div class="slider__buttons"><button class="btn">EXPLORE NOW</button>
+      <button class="btn btn--fix">purchase now</button></div>
+    </div >
+
+    <div  class="slide">
+      <a name="home"></a>
+      <div class="slider__caption"> The Ham is Wordpress theme</div>
+      <div class="slider__subtitle">we are creative </div>
+      <div class="slider__description">Just Buy And Enjoy These Awesome Features</div>
+      <div class="slider__buttons"><button class="btn">EXPLORE NOW</button>
+        <button class="btn btn--fix">purchase now</button></div>
+    </div >  
+  </div>
+
+  <div class="about">
+    <a name="about"></a>
+    <ul class="about__list">
+      <li class="about__list-item">
+        <div class="about__list-icon"></div>
+        <div class="about__list-title">Different theme option</div>
+      </li >
+      <li class="about__list-item">
+        <div class="about__list-icon"></div>
+        <div class="about__list-title">fully customizable </div>
+      </li>
+      <li class="about__list-item">
+        <div class="about__list-icon"></div>
+        <div class="about__list-title">unlimited support</div>
+      </li>
+      <li class="about__list-item">
+        <div class="about__list-icon"></div>
+        <div class="about__list-title"> responsive all device</div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="features">
+    <div class="mainer">
+      <div class="features__title  wow fadeInRight" data-wow-duration="2s">Creative Amazing Features</div>
+      <div class="hr  wow rotateIn" data-wow-duration="2s"></div>
+      <ul class="grid "></ul>
+    </div>
+  </div>
+
+  <div class="about-company">
+    <div class="about-company__img-block">
+      <img alt="" src="./img/aboutcompany1.png" class="about-company__img wow zoomIn">
+    </div>
+    <div class="about-company__tabs">
+      <div class="about-company__title  wow fadeInRight">About Our Company
+        <div class="hr hr--about-company  wow rotateIn"></div>
+      </div>
+
+      <ul class="about-company__tabs-list">
+        <li class="about-company__tabs-item"><a class="about-company__tabs-link" href="#tabs-1">our History   </a></li>
+        <li class="about-company__tabs-item"><a  class="about-company__tabs-link" href="#tabs-2">   our Biography    </a></li>
+        <li class="about-company__tabs-item active"><a  class="about-company__tabs-link" href="#tabs-3">  our Skills</a></li>
+      </ul>
+      <a name="skills"></a>
+      <div class="tabs" id="tabs-1">
+        <div class="tabs-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          <ul class="list-history">
+            <li class="list-history__item ">
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item">
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item"> 
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item"> 
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item">
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item"> 
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item"> 
+              <svg width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>
+            <li class="list-history__item">
+              <svg  width="23px" height="23px">
+                <path fill-rule="evenodd"  fill="rgb(24, 207, 171)"
+                  d="M11.500,-0.003 C5.147,-0.003 -0.000,5.144 -0.000,11.497 C-0.000,17.850 5.147,22.997 11.500,22.997 C17.852,22.997 23.000,17.850 23.000,11.497 C23.000,5.144 17.852,-0.003 11.500,-0.003 ZM9.873,16.918 L4.452,11.497 L6.621,9.330 L9.873,12.581 L16.378,6.076 L18.547,8.246 L9.873,16.918 Z"/>
+              </svg>Excepteur sint occaecat sint.
+            </li>  
+          </ul>
+        </div>  
+      </div>
+      <div class="tabs tabs--fix"  id="tabs-2">
+        <div class="tabs-description">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum Suspendisse cursus malesuada facilisis. Nunc con sectetur odio sed dolor tincidunt porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibu lum nec odio ipsum. Sus pendisse cursus malesua da facilisis. Vestibulum nec odio ipsum. 
+          <br> <br> <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum Suspendisse cursus malesuada facilisis. Nunc con sectetur odio sed dolor tincidunt porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div> 
+      </div>
+      <div class="tabs tabs--skill"  id="tabs-3">    
+        <div class="skill" ></div>
+        <div class="skills" data-percent="72%">
+          <div class="title" ><span>User Interface</span></div>
+          <div class="skill-bar" style="background: #9c5da5;"></div>      
+        </div>
+        <div class="skills" data-percent="85%">
+          <div class="title" ><span>Web Design</span></div>
+          <div class="skill-bar" style="background: #11b0de;"></div>       
+        </div>
+        <div class="skills" data-percent="67%">
+          <div class="title"><span>Wordpress</span></div>
+          <div class="skill-bar" style="background: #d67f7f;"></div>        
+        </div>
+        <div class="skills" data-percent="90%">
+          <div class="title"><span>HTML & CSS</span></div>
+          <div class="skill-bar" style="background: #20bc9d;"></div>         
+        </div>
+        <div class="skills" data-percent="85%">
+          <div class="title"><span>App Design</span></div>
+          <div class="skill-bar" style="background: #bb8a36;"></div>        
+        </div>
+     
+      </div>
+    </div>
+  </div>
+  
+  <div class="amazing-work">
+    <div class="mainer">
+      <a class="amazing-work__title wow fadeInRight" name="work">Our Amazing Work</a>
+      <div class="hr  wow rotateIn"></div>
+      <ul class="amazing-work__tabs-list">
+        <li class="amazing-work__tabs-item"><a class="amazing-work__tabs-link" href="#tab1">All  </a></li>
+        <li class="amazing-work__tabs-item"><a  class="amazing-work__tabs-link" href="#tab2">  Graphic design   </a></li>
+        <li class="amazing-work__tabs-item "><a  class="amazing-work__tabs-link" href="#tab3">  web design</a></li>
+        <li class="amazing-work__tabs-item "><a  class="amazing-work__tabs-link" href="#tab4">  landing pages</a></li>
+        <li class="amazing-work__tabs-item "><a  class="amazing-work__tabs-link" href="#tab5">  wordpress</a></li>
+      </ul>
+      <div  id="tab1">
+        <ul class="tab-grid"></ul>
+        <button class="btn btn--work">Load more</button>
+      </div>
+      <div  id="tab2">
+        <ul class="tab-grid"></ul>
+      </div>
+      <div  id="tab3">
+        <ul class="tab-grid"></ul>
+      </div>
+      <div  id="tab4">
+        <ul class="tab-grid"></ul>
+      </div>
+      <div  id="tab5">
+        <ul class="tab-grid"></ul>
+      </div>    
+    </div>
+  </div>
+
+  <div class="news">
+    <div class="mainer">
+      <a name="news" class="news__title  wow fadeInRight">Breaking News</a>
+      <div class="hr hr--fix  wow rotateIn"></div>
+      <ul class="news-grid"></ul>
+    </div>
+  </div>
+
+  <div class="fact" >
+    <ul class="fact__list">
+      <li class="fact__list-item"> 
+        <div class="fact__icon">
+          <svg width="37px" height="31px">
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M34.053,17.773 L21.696,17.773 C21.654,16.907 21.291,16.130 20.715,15.567 C20.698,15.548 20.676,15.536 20.658,15.518 C20.531,15.399 20.399,15.286 20.254,15.188 C20.201,15.153 20.142,15.128 20.088,15.097 C19.969,15.027 19.852,14.955 19.723,14.900 C19.623,14.857 19.514,14.832 19.408,14.800 C19.316,14.772 19.229,14.736 19.135,14.715 C18.930,14.674 18.718,14.649 18.500,14.649 C18.282,14.649 18.069,14.673 17.864,14.715 C17.769,14.736 17.682,14.772 17.591,14.800 C17.485,14.832 17.376,14.857 17.275,14.899 C17.146,14.955 17.028,15.027 16.909,15.097 C16.855,15.128 16.796,15.153 16.745,15.187 C16.600,15.286 16.467,15.399 16.340,15.518 C16.321,15.536 16.301,15.548 16.283,15.566 C15.708,16.129 15.344,16.905 15.302,17.771 L2.945,17.771 C1.319,17.771 -0.000,16.425 -0.000,14.762 L-0.000,7.821 C-0.000,6.165 1.380,4.813 3.068,4.813 L10.138,4.813 C10.566,2.086 12.878,-0.006 15.667,-0.006 L21.332,-0.006 C24.121,-0.006 26.434,2.086 26.861,4.813 L33.931,4.813 C35.619,4.813 37.000,6.165 36.999,7.822 L36.999,14.765 C36.999,16.428 35.680,17.773 34.053,17.773 ZM21.332,2.810 L15.667,2.810 C14.407,2.810 13.349,3.653 12.974,4.813 L24.025,4.813 C23.649,3.653 22.591,2.810 21.332,2.810 ZM16.686,19.001 L16.686,18.162 C16.686,17.139 17.498,16.309 18.500,16.309 C19.502,16.309 20.314,17.139 20.314,18.162 L20.314,19.001 C20.314,20.025 19.501,20.854 18.500,20.854 C17.498,20.854 16.686,20.025 16.686,19.001 ZM15.441,20.028 C15.843,21.371 17.055,22.355 18.500,22.355 C19.945,22.355 21.157,21.371 21.559,20.028 L34.054,20.028 C34.843,20.028 35.587,19.841 36.257,19.514 L36.257,27.985 C36.257,29.641 34.931,30.995 33.311,30.995 L3.688,30.995 C2.068,30.995 0.743,29.641 0.743,27.985 L0.743,19.514 C1.411,19.839 2.156,20.028 2.945,20.028 L15.441,20.028 Z"/>
+          </svg>
+        </div>
+        <div class="fact__count" >4609</div>
+        <div class="fact__title">Works</div>
+      </li>
+      <li class="fact__list-item"> 
+        <div class="fact__icon">
+          <svg width="28px" height="36px">
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M27.996,31.275 C27.997,30.711 28.000,31.193 27.996,31.275 ZM13.999,35.995 C2.064,35.995 0.003,31.932 0.003,31.932 C0.003,31.459 0.003,31.188 0.002,31.042 C0.005,31.120 0.010,31.086 0.023,30.411 C0.181,22.164 1.381,19.785 9.941,18.276 C9.941,18.276 11.160,19.796 13.999,19.796 C16.839,19.796 18.057,18.276 18.057,18.276 C26.712,19.804 27.843,22.215 27.980,30.687 C27.989,31.228 27.993,31.321 27.996,31.275 C27.995,31.417 27.995,31.627 27.995,31.932 C27.995,31.932 25.934,35.995 13.999,35.995 ZM13.999,17.601 C9.907,17.601 6.589,13.659 6.589,8.797 C6.589,3.936 7.678,-0.006 13.999,-0.006 C20.321,-0.006 21.410,3.936 21.410,8.797 C21.410,13.659 18.092,17.601 13.999,17.601 ZM0.002,31.042 C-0.000,30.959 0.001,30.746 0.002,31.042 Z"/>
+          </svg>
+        </div>
+        <div class="fact__count">3470</div>
+        <div class="fact__title">Customers</div>
+      </li>
+      <li class="fact__list-item"> 
+        <div class="fact__icon">
+          <svg  width="35px" height="35px">
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M10.500,27.998 C8.575,27.998 7.000,29.572 7.000,31.497 C7.000,33.422 8.575,34.997 10.500,34.997 C12.425,34.997 14.000,33.422 14.000,31.497 C14.000,29.572 12.425,27.998 10.500,27.998 ZM-0.000,-0.003 L-0.000,3.497 L3.500,3.497 L9.800,16.798 L7.350,20.997 C7.175,21.522 7.000,22.222 7.000,22.747 C7.000,24.673 8.575,26.247 10.500,26.247 L31.500,26.247 L31.500,22.747 L11.200,22.747 C11.025,22.747 10.850,22.572 10.850,22.397 L10.850,22.222 L12.425,19.247 L25.375,19.247 C26.775,19.247 27.825,18.547 28.350,17.497 L34.650,6.122 C35.000,5.773 35.000,5.596 35.000,5.248 C35.000,4.197 34.300,3.497 33.250,3.497 L7.350,3.497 L5.775,-0.003 L-0.000,-0.003 ZM28.000,27.998 C26.075,27.998 24.500,29.572 24.500,31.497 C24.500,33.422 26.075,34.997 28.000,34.997 C29.925,34.997 31.500,33.422 31.500,31.497 C31.500,29.572 29.925,27.998 28.000,27.998 Z"/>
+          </svg>
+        </div>
+        <div class="fact__count">2908</div>
+        <div class="fact__title">Purchase</div>
+      </li>
+      <li class="fact__list-item"> 
+        <div class="fact__icon">
+          <svg width="43px" height="38px">
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M41.142,37.997 L1.858,37.997 C0.834,37.997 -0.000,37.169 -0.000,36.150 L1.743,20.974 C1.743,19.957 2.576,19.129 3.601,19.129 C3.601,19.129 8.615,19.129 10.286,19.129 C10.534,19.129 10.716,19.103 10.848,19.326 C11.203,19.924 11.073,19.766 11.407,20.307 C11.692,20.767 11.442,20.859 11.284,20.859 C9.363,20.859 3.601,20.859 3.601,20.859 C3.539,20.859 3.484,20.914 3.484,20.974 L1.742,36.150 C1.742,36.211 1.796,36.266 1.858,36.266 L41.142,36.266 C41.204,36.266 41.259,36.212 41.259,36.150 L39.516,20.974 C39.516,20.914 39.462,20.859 39.400,20.859 C39.400,20.859 33.826,20.859 31.657,20.859 C31.559,20.859 31.323,20.773 31.479,20.515 C31.815,19.964 31.784,20.016 32.141,19.419 C32.320,19.119 32.483,19.129 32.624,19.129 C34.439,19.129 39.399,19.129 39.399,19.129 C40.424,19.129 41.258,19.957 41.258,20.974 L43.000,36.150 C43.000,37.169 42.167,37.997 41.142,37.997 ZM21.500,29.426 C20.353,29.426 10.376,17.161 10.376,11.055 C10.376,4.947 15.356,-0.003 21.500,-0.003 C27.644,-0.003 32.625,4.947 32.625,11.055 C32.625,17.161 22.691,29.426 21.500,29.426 ZM28.686,10.667 C28.686,6.723 25.469,3.525 21.500,3.525 C17.531,3.525 14.314,6.723 14.314,10.667 C14.314,14.611 17.531,17.809 21.500,17.809 C25.469,17.809 28.686,14.611 28.686,10.667 Z"/>
+          </svg>
+        </div>
+        <div class="fact__count">1908</div>
+        <div class="fact__title">Office</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="price">
+    <div class="price__title wow fadeInRight">Our Pricing Table</div>
+    <div class="hr hr--fix  wow rotateIn"></div>
+    <div class="mainer">
+      <div class="wrapper wrapper--fix">
+        <div class="price__block ">
+          <div class="price__block-title">Personal</div>
+          <div class="price__block-cost">$99<span class="price__block-cost price__block-cost--fix">/Month</span></div>
+          <ul class="price__block-list">
+            <li class="price__block-item">1 Hosting   </li>
+            <li class="price__block-item">  2 Email Marketing</li>
+            <li class="price__block-item">   5 Database</li>
+            <li class="price__block-item">  2 Design Pack</li>
+            <li class="price__block-item"> 3 Website Layouts</li>
+            <li class="price__block-item"> 5 Header Style</li>
+            <li class="price__block-item">3 Online Store</li>
+          </ul>
+          <button class="btn btn--price">BUY NOW</button>
+        </div>
+        <div class="price__block">
+          <div class="price__block-title">Business</div>
+          <div class="price__block-cost">$199<span class="price__block-cost price__block-cost--fix">/Month</span></div>
+          <ul class="price__block-list">
+            <li class="price__block-item">1 Hosting   </li>
+            <li class="price__block-item">  2 Email Marketing</li>
+            <li class="price__block-item">   5 Database</li>
+            <li class="price__block-item">  2 Design Pack</li>
+            <li class="price__block-item"> 3 Website Layouts</li>
+            <li class="price__block-item"> 5 Header Style</li>
+            <li class="price__block-item">3 Online Store</li>
+          </ul>
+          <button class="btn btn--price">BUY NOW</button>
+        </div>
+        <div class="price__block">
+          <div class="price__block-title price__block-title--fix">Professional</div>
+          <div class="price__block-cost">$299<span class="price__block-cost price__block-cost--fix">/Month</span></div>
+          <ul class="price__block-list">
+            <li class="price__block-item">1 Hosting   </li>
+            <li class="price__block-item">  2 Email Marketing</li>
+            <li class="price__block-item">   5 Database</li>
+            <li class="price__block-item">  2 Design Pack</li>
+            <li class="price__block-item"> 3 Website Layouts</li>
+            <li class="price__block-item"> 5 Header Style</li>
+            <li class="price__block-item">3 Online Store</li>
+          </ul>
+          <button class="btn btn--price">BUY NOW</button>
+        </div>
+        <div class="price__block">
+          <div class="price__block-title">diamond</div>
+          <div class="price__block-cost">$299<span class="price__block-cost price__block-cost--fix">/Month</span></div>
+          <ul class="price__block-list">
+            <li class="price__block-item">1 Hosting   </li>
+            <li class="price__block-item">  2 Email Marketing</li>
+            <li class="price__block-item">   5 Database</li>
+            <li class="price__block-item">  2 Design Pack</li>
+            <li class="price__block-item"> 3 Website Layouts</li>
+            <li class="price__block-item"> 5 Header Style</li>
+            <li class="price__block-item">3 Online Store</li>
+          </ul>
+          <button class="btn btn--price">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team">
+    <div class="mainer">
+      <a name="team" class="team__title wow fadeInRight">Meet Our Team</a>
+      <div class="hr hr--fix  wow rotateIn"></div>
+      <div class="wrapper">
+        <ul class="team-list"> </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="wrapper wrapper--fix">
+      <div class="" id="map"></div>
+      <div class="info-block">
+        <div class="info-block__title wow fadeInRight">Keep In Touch
+          <div class="hr hr--about-company hr--info  wow rotateIn"></div>
+        </div>
+      
+        <form action="" class="info-block__form">
+          <input type="text" class="info-block__form-input" placeholder="Name" required>
+          <input type="text" class="info-block__form-input" placeholder="Email" required>
+          <textarea class="info-block__form-input info-block__form-input--fix" placeholder="Message" required></textarea>
+          <button class="btn btn--info">send request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="mainer mainer--fix">
+      <img class="logo" src="./img/logo.png">
+      <a name="contact"></a>
+      <div class="footer__info">
+        <div class="footer__info-address">Office :
+        795 Folsom Ave, Suite 600
+        San Francisco, CA 94107</div>
+        <div class="footer__info-phone">Phone: (91) 8547 632521</div>
+        <div class="footer__info-fax">Fax: (91) 11 4752 1433</div>
+        <div class="footer__info-email">Email: info@canvas.com </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+  <script src="./js/jquery-1.8.3.min.js"></script>
+
+  <script src="./js/jquery.spincrement.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://johannburkard.de/resources/Johann/jquery.highlight-5.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

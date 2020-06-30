@@ -1,0 +1,105 @@
+@import 'header.scss';
+@import 'about.scss';
+@import 'variables.scss';
+@import 'features.scss';
+@import 'about__company.scss';
+@import 'menu.scss';
+@import 'news.scss';
+@import 'fact.scss';
+@import 'price.scss';
+@import 'team.scss';
+@import 'amazing_work.scss';
+@import 'info.scss';
+@import 'footer.scss';
+@import 'media.scss';
+
+body {
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 ;
+  padding: 0;
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+  border: none;
+  color: #ffff;
+  font-family: Arial;
+  font-size: $fontSize - 8;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: Arial;
+  font-size: $fontSize - 8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: $fontSize;
+  padding: 0 0 10px 0;
+  color: #545454;
+}
+.highlight {
+  background: #4CFF00;
+}
+
+
+.mainer{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  &--fix{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+//
+.wrapper{
+  display: flex;
+}
+
+//
+
+
+//
+
+.ui-state-active{
+  border-top-color: $colorBase;
+  .about-company__tabs-link{
+    color: $colorBase;
+  }
+  .amazing-work__tabs-link{
+    color: $colorBase;
+  }
+}
+//

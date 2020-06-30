@@ -1,0 +1,142 @@
+
+@import 'variables.scss';
+
+.about{  
+
+  &__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item{
+    list-style: none;
+    background-color: #1c2a33;   
+    width: 100%;
+    text-align: center;   
+    border-top: 7px solid $colorBase;
+    cursor: pointer;
+    padding-bottom: 115px;
+
+    &:hover{
+      .about__list-title{
+        color: white;
+      }
+      .about__list-icon{
+        background-position: 330px 97px;
+      }
+    }
+
+    &:nth-child(2){
+      background-color: $colorBase;
+      border-top: 7px solid white;
+      margin-right: -1px;
+
+      .about__list-title{
+        color: white;
+      }
+
+      .about__list-icon{
+        background-position: 271px 75px;
+        width: 96px;
+        height: 75px;
+        margin-top: 98px;
+        margin-bottom: 55px;        
+      }
+
+      &:hover{
+        .about__list-title{
+          color: $colorBase;
+        }
+
+        background-color:white;
+        border-top-color:#1c2a33 ;
+
+        .about__list-icon{
+          background-position: 271px 202px;
+        }
+      }
+    }
+
+    &:nth-child(3){
+      
+      .about__list-icon{
+        background-position: 176px 224px;
+        width: 63px;
+        height: 97px;
+        margin-bottom: 43px;
+      }
+      &:hover{
+            
+        .about__list-icon{
+          background-position: 176px 97px;
+        }
+      }
+    }
+
+    &:nth-child(4){
+      background-color: $colorBase;
+      border-top: 7px solid white;
+
+      .about__list-title{
+        color: white;
+      }
+
+      .about__list-icon{
+        background-position: 113px 75px;
+        margin-top: 98px;
+        margin-bottom: 53px;
+        width: 100px;
+        height: 77px;
+      }
+      
+      &:hover{
+        background-color:white;
+        border-top-color:#1c2a33 ;
+
+        .about__list-title{
+          color: $colorBase;
+        }
+
+        .about__list-icon{
+          background-position: 113px 202px;
+        }
+      }
+    }
+  }
+
+  &__list-title{
+    text-transform: uppercase;
+    font-size: $fontSize;
+    font-weight: bold;
+    font-family: $fontBase;    
+    color: $colorBase;
+  }
+
+  &__list-icon{
+    background-image: url(../img/sprite.png);
+    background-position: 330px 224px;
+    width: 60px;
+    height: 100px;
+    margin: 88px auto 39px auto;
+    // margin-top: 88px;
+    // margin-bottom: 39px;
+  }
+}
+
+.animated{
+  animation-name: rot;
+  transition-duration: 0.3s;  
+}
+
+@keyframes rot {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
