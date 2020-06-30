@@ -77,8 +77,6 @@ gulp.task('lint', function() {
 });
 gulp.task('js', function () {
   gulp.watch('./src/js/**/*.js', js)
-
- 
 });
 //
 gulp.task('default', gulp.series(gulp.parallel('imagemin','html', 'styles', 'webserver','js','lib')));
